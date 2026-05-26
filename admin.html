@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PinkyStore — Admin Dashboard 👑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pinky-dashboard-body">
+
+<header class="pinky-topbar">
+    <div class="logo" style="font-size: 24px;">PinkyStore Admin Panel 👑</div>
+    <div class="pinky-topbar-right">
+      <span>💖 Admin Mode</span> | 
+      <a href="pelanggan.html" onclick="return confirm('Keluar dari panel admin dan kembali ke toko? ✨💖')">🚪 Logout</a>
+    </div>
+  </header>
+
+  <div class="pinky-wrapper">
+    
+    <aside class="pinky-sidebar">
+      <ul>
+        <li class="active"><a href="#dashboard">🏠 Dashboard</a></li>
+        <li><a href="#" onclick="alert('Menuju Manajemen Produk Robux')">💎 Paket Robux</a></li>
+        <li><a href="#" onclick="alert('Menuju Daftar Pelanggan/Member')">👥 Data Member</a></li>
+        <li><a href="#" onclick="alert('Menuju Antrean Pesanan')">📦 Pesanan Masuk</a></li>
+        <li><a href="#" onclick="alert('Menuju Halaman Konfirmasi Pembayaran')">💳 Riwayat Transaksi</a></li>
+        <li><a href="#" onclick="alert('Menuju Pengaturan Web Toko')">⚙️ Pengaturan Web</a></li>
+      </ul>
+    </aside>
+
+    <main class="pinky-content">
+      <h1 class="pinky-page-title">Overview Toko Hari Ini ✨</h1>
+
+      <div class="pinky-stats-grid">
+        
+        <div class="pinky-card pinky-card-blue">
+          <span class="card-icon">💎</span>
+          <div class="card-value">12,450</div>
+          <div class="card-label">Total Robux Terjual</div>
+        </div>
+
+        <div class="pinky-card pinky-card-pink">
+          <span class="card-icon">👥</span>
+          <div class="card-value">5,385</div>
+          <div class="card-label">Total Pelanggan</div>
+        </div>
+
+        <div class="pinky-card pinky-card-yellow">
+          <span class="card-icon">⏳</span>
+          <div class="card-value">42</div>
+          <div class="card-label">Pesanan Diproses</div>
+        </div>
+
+        <div class="pinky-card pinky-card-red">
+          <span class="card-icon">⚠️</span>
+          <div class="card-value" style="color: #ff4f8b;">7</div>
+          <div class="card-label">Pesanan Terlambat</div>
+        </div>
+
+      </div>
+
+      <section class="pinky-table-section">
+        <h2 style="font-family: 'Fredoka'; color: #ff6f9f; margin-bottom: 20px;">Antrean Top Up Terbaru 🚀</h2>
+        
+        <div style="overflow-x: auto;">
+          <table class="pinky-table">
+            <thead>
+              <tr>
+                <th>No Transaksi</th>
+                <th>Username Roblox</th>
+                <th>Paket Produk</th>
+                <th>Metode</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#PS-8821</td>
+                <td>AnisaR_Roblox</td>
+                <td>400 Robux 💎</td>
+                <td>Dana</td>
+                <td><span class="p-status status-aktif">Sukses ✅</span></td>
+              </tr>
+              <tr>
+                <td>#PS-8822</td>
+                <td>Budi_Slayer</td>
+                <td>1700 Robux 💎</td>
+                <td>QRIS / GoPay</td>
+                <td><span class="p-status status-proses">Diproses ⏳</span></td>
+              </tr>
+              <tr>
+                <td>#PS-8823</td>
+                <td>GamerImut✨</td>
+                <td>80 Robux 💎</td>
+                <td>OVO</td>
+                <td><span class="p-status status-gagal">Terlambat ⚠️</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
